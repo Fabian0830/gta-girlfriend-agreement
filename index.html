@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10091d">
+  <title>Relationship Terms & Conditions | Vice City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#ff4f9a;--cyan:#52e5ff;--purple:#a878ff;--ink:#10091d;--panel:#1b102b;--muted:#b9aec9}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;color:#fff;font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 15% 10%,#49205d 0,transparent 35%),radial-gradient(ellipse at 85% 30%,#172f56 0,transparent 38%),linear-gradient(145deg,#0b0712,#160d25 55%,#080b18);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#ffffff0c 1px,transparent 1px),linear-gradient(90deg,#ffffff0c 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    .wrap{width:min(920px,calc(100% - 32px));margin:auto;padding:48px 0 70px;position:relative}
+    .topline{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--cyan);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+    .pill{border:1px solid #52e5ff66;padding:8px 12px;border-radius:99px;background:#52e5ff12}
+    header{text-align:center;padding:54px 0 34px}
+    .eyebrow{color:var(--pink);font-weight:700;letter-spacing:.28em;font-size:.75rem;text-transform:uppercase}
+    h1,h2,h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;margin:0}
+    h1{font-size:clamp(3.6rem,10vw,7rem);line-height:.86;letter-spacing:.015em;text-shadow:0 0 24px #ff4f9a55}
+    h1 span{display:block;color:var(--cyan)}
+    .subtitle{max-width:600px;margin:22px auto 0;color:#d6cde2;line-height:1.7}
+    .stamp{display:inline-block;margin-top:25px;padding:9px 16px;border:1px solid #ff4f9a88;color:#ff9bc4;transform:rotate(-2deg);font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .notice{background:#ffffff09;border:1px solid #ffffff1c;border-left:3px solid var(--cyan);padding:17px 19px;border-radius:12px;color:#d9d0e5;line-height:1.6;margin-bottom:22px;font-size:.9rem}
+    .notice strong{color:white}
+    .clauses{display:grid;gap:13px}
+    .clause{display:grid;grid-template-columns:54px 1fr;gap:16px;padding:20px;background:linear-gradient(120deg,#211432eF,#171326ed);border:1px solid #ffffff17;border-radius:15px;box-shadow:0 12px 35px #0002;transition:transform .2s,border-color .2s}
+    .clause:hover{transform:translateY(-2px);border-color:#ff4f9a66}
+    .num{font-family:'Barlow Condensed',sans-serif;font-size:2rem;color:var(--pink);line-height:1}
+    .clause h3{font-size:1.35rem;letter-spacing:.04em;margin-bottom:6px}
+    .clause p{margin:0;color:#c7bdd4;line-height:1.65;font-size:.92rem}
+    .clause p b{color:#fff}
+    .signoff{margin:26px 0;background:linear-gradient(120deg,#ff4f9a1b,#52e5ff12);border:1px solid #ff4f9a55;padding:23px;border-radius:15px;text-align:center}
+    .signoff h2{font-size:2rem;margin-bottom:7px}
+    .signoff p{margin:0;color:#d5c9e2;line-height:1.6}
+    .acceptbox{padding:24px;background:#0d0918aa;border:1px solid #ffffff25;border-radius:16px}
+    .checkrow{display:flex;align-items:flex-start;gap:12px;color:#e9e1f1;line-height:1.5;font-size:.9rem;cursor:pointer}
+    input[type=checkbox]{appearance:none;flex:0 0 21px;width:21px;height:21px;border:1px solid #a878ff;border-radius:5px;background:#1b102b;margin:1px 0 0;cursor:pointer}
+    input[type=checkbox]:checked{background:var(--pink);border-color:var(--pink)}
+    input[type=checkbox]:checked:after{content:"✓";display:block;text-align:center;font-weight:900;color:#160b20}
+    button{width:100%;margin-top:20px;border:0;border-radius:10px;padding:17px 20px;background:linear-gradient(90deg,#ff4f9a,#a878ff);color:#160b20;font:900 1.15rem 'Barlow Condensed',sans-serif;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 28px #ff4f9a38;transition:transform .2s,opacity .2s}
+    button:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.08)}
+    button:disabled{opacity:.35;cursor:not-allowed;box-shadow:none}
+    .smallprint{text-align:center;color:#8f829f;font-size:.72rem;line-height:1.6;margin:17px 0 0}
+    footer{text-align:center;color:#847992;font-size:.72rem;margin-top:28px;letter-spacing:.08em}
+    .success{display:none;text-align:center;padding:48px 25px 42px;border:1px solid #ff4f9a66;border-radius:20px;background:linear-gradient(145deg,#24132feF,#101629f2);box-shadow:0 20px 70px #0005}
+    .success .heart{font-size:3rem;filter:drop-shadow(0 0 15px #ff4f9a)}
+    .success h2{font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:15px 0}
+    .success h2 span{color:var(--pink)}
+    .success p{max-width:620px;margin:12px auto;color:#ded4e9;line-height:1.8}
+    .priority{display:inline-block;margin-top:17px;border:1px solid #52e5ff88;color:var(--cyan);padding:12px 17px;border-radius:9px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .hidden{display:none!important}
+    @media(max-width:560px){.wrap{padding-top:25px}.topline{font-size:.6rem}.clause{grid-template-columns:38px 1fr;padding:16px;gap:10px}.num{font-size:1.6rem}.clause h3{font-size:1.2rem}header{padding:45px 0 28px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topline"><span>Los Santos • Vice City Division</span><span class="pill">Relationship DLC v1.0</span></div>
+    <header>
+      <div class="eyebrow">Rockstar presents</div>
+      <h1>Terms & <span>Conditions</span></h1>
+      <p class="subtitle">A legally questionable, emotionally binding agreement between two players who have chosen to complete this mission together.</p>
+      <div class="stamp">Classified: Girlfriend Access Only</div>
+    </header>
+
+    <section id="agreement">
+      <div class="notice"><strong>PLEASE READ BEFORE PROCEEDING:</strong> By continuing, you acknowledge that this agreement is mostly jokes, 100% affection, and absolutely not an invitation to actually contact a lawyer.</div>
+      <div class="clauses">
+        <article class="clause"><div class="num">01</div><div><h3>Response Time Regulations</h3><p>Messages may occasionally be delayed due to work, sleep, food, or the tragic event known as “I opened the message and forgot to reply.” This shall not be interpreted as a lack of love. <b>Double-texting is permitted and encouraged.</b></p></div></article>
+        <article class="clause"><div class="num">02</div><div><h3>Hangout Mission Requests</h3><p>All requests to spend time together shall receive priority consideration. The phrase “when are you coming?” may be used as a powerful summoning spell. Snacks and cuddles increase mission success rates.</p></div></article>
+        <article class="clause"><div class="num">03</div><div><h3>The Lucia Clause</h3><p>Any character, NPC, or fictional woman in GTA VI is strictly fictional competition. <b>Lucia has no relationship privileges.</b> You, however, have the premium, lifetime, no-subscription edition.</p></div></article>
+        <article class="clause"><div class="num">04</div><div><h3>Player Two Privileges</h3><p>You are entitled to front-seat privileges, playlist veto power, occasional control of the TV, and unlimited rights to steal hoodies. Controller sharing is negotiable. Hoodie sharing is not.</p></div></article>
+        <article class="clause"><div class="num">05</div><div><h3>Emergency Mission Cancellation</h3><p>If you need comfort, reassurance, or just a person to sit with you, all side missions are immediately paused. No in-game mission is more important than checking in on you.</p></div></article>
+        <article class="clause"><div class="num">06</div><div><h3>Save Game Protocol</h3><p>Good memories shall be saved frequently. Arguments must be handled with honesty, patience, and respect. Neither player is allowed to rage-quit without at least attempting a proper conversation.</p></div></article>
+        <article class="clause"><div class="num">07</div><div><h3>Daily Relationship Maintenance</h3><p>Includes, but is not limited to: affection, compliments, random kisses, checking how your day went, laughing at terrible jokes, and reminding you that you are appreciated.</p></div></article>
+        <article class="clause"><div class="num">08</div><div><h3>Financial Department Disclaimer</h3><p>The boyfriend's in-game bank balance may not always reflect his real-life bank balance. Expensive dates are subject to budget approval, but effort, creativity, and quality time are always available.</p></div></article>
+        <article class="clause"><div class="num">09</div><div><h3>No Replacement Policy</h3><p>This agreement does not permit the replacement of the girlfriend with an NPC, online character, or random side quest. <b>There is only one you, and that is the whole point.</b></p></div></article>
+        <article class="clause"><div class="num">10</div><div><h3>Unlimited Love & Support</h3><p>Both players agree to keep choosing each other, celebrate each other's wins, support each other through difficult levels, and remember that the best part of the game is having the right person beside you.</p></div></article>
+      </div>
+      <div class="signoff"><h2>One last thing, player two…</h2><p>There is no cheat code for a good relationship. Just two people showing up, communicating, laughing, learning, and choosing each other.</p></div>
+      <div class="acceptbox">
+        <label class="checkrow"><input id="agree" type="checkbox"><span>I have read the terms, accept the extremely serious cuddling obligations, and agree to continue this co-op campaign.</span></label>
+        <button id="accept" disabled>Accept & Continue →</button>
+        <p class="smallprint">By clicking accept, you confirm that you are the one and only Player Two. This agreement is powered by love, not Rockstar Games.</p>
+      </div>
+    </section>
+
+    <section class="success" id="success" aria-live="polite">
+      <div class="heart">💗</div>
+      <div class="eyebrow">Mission completed • Relationship status: Legendary</div>
+      <h2>Agreement <span>Accepted.</span></h2>
+      <p>Okay, jokes aside… I hope you know that no game, no character, no mission, and no amount of virtual money could ever take your place.</p>
+      <p><strong>You are still my favourite person, my real-life Player Two, and the one I want beside me through every level — the easy ones and the difficult ones.</strong></p>
+      <p>You matter to me more than I probably manage to put into words. I choose you, I appreciate you, and I'm grateful that I get to do life with you. ❤️</p>
+      <div class="priority">⭐ Priority Player: YOU. Always.</div>
+      <p style="margin-top:26px;color:#9e91ad;font-size:.8rem">Now come here. Your reward is unlimited hugs. No loading screen required.</p>
+    </section>
+    <footer>VICE CITY RELATIONSHIP AUTHORITY • EST. FOREVER-ish</footer>
+  </main>
+
+  <!-- EMAILJS SETUP: Replace the three placeholder values below after creating your EmailJS service and template. -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+    const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+    const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+
+    const checkbox = document.getElementById("agree");
+    const button = document.getElementById("accept");
+    const agreement = document.getElementById("agreement");
+    const success = document.getElementById("success");
+
+    checkbox.addEventListener("change", () => { button.disabled = !checkbox.checked; });
+
+    button.addEventListener("click", async () => {
+      if (!checkbox.checked) return;
+      button.disabled = true;
+      button.textContent = "MISSION COMPLETE…";
+      agreement.classList.add("hidden");
+      success.style.display = "block";
+      window.scrollTo({top: 0, behavior: "smooth"});
+
+      const configured = ![EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID]
+        .some(value => value.startsWith("YOUR_"));
+
+      if (configured && window.emailjs) {
+        try {
+          emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+            subject: "Your Player Two accepted the relationship agreement 💗",
+            message: "The GTA Girlfriend Terms & Conditions have been accepted!",
+            accepted_at: new Date().toLocaleString(),
+            page: window.location.href
+          });
+        } catch (error) {
+          console.error("Email notification could not be sent:", error);
+        }
+      } else {
+        console.info("EmailJS is not configured yet. The acceptance screen still works.");
+      }
+    });
+  </script>
+</body>
+</html>
